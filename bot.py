@@ -13,7 +13,7 @@ client = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 
 @client.on(events.NewMessage(pattern=r'\.alive', outgoing=True))
 async def alive(event):
-    await event.edit("**Ryhavean UserBOT! Koyeb üzərində 7/24 Aktiv!**")
+    await event.edit("**Ryhavean UserBOT!🥷**")
 
 @client.on(events.NewMessage(chats=TARGET_CHANNEL))
 async def fast_reply(event):
